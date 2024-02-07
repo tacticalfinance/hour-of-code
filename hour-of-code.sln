@@ -3,17 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "design-patterns", "design-patterns\design-patterns.csproj", "{E5A4D00E-8365-41D9-9C97-19D97F2D7B0C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "design-patterns", "design-patterns\design-patterns.csproj", "{E5A4D00E-8365-41D9-9C97-19D97F2D7B0C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "design-patterns.tests", "design-patterns.tests\design-patterns.tests.csproj", "{A3709AD9-DDC7-48E2-8F91-8B6A2C601F97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "design-patterns.tests", "design-patterns.tests\design-patterns.tests.csproj", "{A3709AD9-DDC7-48E2-8F91-8B6A2C601F97}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3FF2BA2F-D9F1-4139-9421-C6956D768509}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapter", "Adapter", "{4ED9BD4E-C8E1-4ACC-A538-303265C422E3}"
+	ProjectSection(SolutionItems) = preProject
+		resources\adapter\01.agenda.txt = resources\adapter\01.agenda.txt
+		resources\adapter\02.example.png = resources\adapter\02.example.png
+		resources\adapter\03.object.adapter.structure.png = resources\adapter\03.object.adapter.structure.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{E5A4D00E-8365-41D9-9C97-19D97F2D7B0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -24,5 +30,14 @@ Global
 		{A3709AD9-DDC7-48E2-8F91-8B6A2C601F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3709AD9-DDC7-48E2-8F91-8B6A2C601F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3709AD9-DDC7-48E2-8F91-8B6A2C601F97}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4ED9BD4E-C8E1-4ACC-A538-303265C422E3} = {3FF2BA2F-D9F1-4139-9421-C6956D768509}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A6AE2528-5DAF-4897-A3C9-7204C36F69EC}
 	EndGlobalSection
 EndGlobal

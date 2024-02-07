@@ -1,0 +1,14 @@
+1. Design Patterns
+	- Purpose
+	- GOF
+	- Categories: Creational, Structural, Behavioral
+
+2. Introduction to TDD
+
+3. The Adapter design pattern
+	- Purpose
+	- Trivial implementations
+
+4. Object Adapter
+	- UML
+	- Implementation
