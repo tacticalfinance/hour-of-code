@@ -41,4 +41,15 @@ public class AdapterTests
         Assert.Equal(50, newRectangle.Width);
         Assert.Equal(20, newRectangle.Height);
     }
+
+    [Fact]
+    public void TestInheritanceSolution()
+    {
+        INewRectangle newRectangle = new NewRectangleInheritance(50, 50, 100, 50, 100, 30, 50, 30);
+
+        Assert.Equal(50, newRectangle.TopLeftPoint.XCor);
+        Assert.Equal(50, newRectangle.TopLeftPoint.YCor);
+        Assert.Equal(50, newRectangle.Width);
+        Assert.Equal(20, newRectangle.Height);
+    }
 }
