@@ -2,5 +2,6 @@
 
 public interface INavigator
 {
-    IRoute Navigate(NavigationType navigationType, ICoordinate pointA, ICoordinate pointB);
+    IRoute Navigate(ICoordinate pointA, ICoordinate pointB);
+    INavigationStrategy NavigationStrategy { set; }
 }
