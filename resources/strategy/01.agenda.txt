@@ -1,0 +1,12 @@
+1. Design Patterns - Review
+	- Purpose
+	- GOF
+	- Categories: Creational, Structural (ie Adapter), Behavioral
+
+2. TDD - Review
+
+3. The Strategy design pattern (Behavioral)
+	- Purpose
+	- Trivial implementations
+	- UML
+	- Implementation

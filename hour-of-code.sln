@@ -16,6 +16,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Adapter", "Adapter", "{4ED9
 		resources\adapter\03.object.adapter.structure.png = resources\adapter\03.object.adapter.structure.png
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Strategy", "Strategy", "{E446D85A-FA53-43AB-80CF-6504BA1F1BC6}"
+	ProjectSection(SolutionItems) = preProject
+		resources\strategy\01.agenda.txt = resources\strategy\01.agenda.txt
+		resources\strategy\02.example.png = resources\strategy\02.example.png
+		resources\strategy\03.structure.png = resources\strategy\03.structure.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +43,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4ED9BD4E-C8E1-4ACC-A538-303265C422E3} = {3FF2BA2F-D9F1-4139-9421-C6956D768509}
+		{E446D85A-FA53-43AB-80CF-6504BA1F1BC6} = {3FF2BA2F-D9F1-4139-9421-C6956D768509}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A6AE2528-5DAF-4897-A3C9-7204C36F69EC}
