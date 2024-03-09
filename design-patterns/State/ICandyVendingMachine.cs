@@ -2,4 +2,7 @@
 
 public interface ICandyVendingMachine
 {
+    string Message { get; }
+    void InsertCoin();
+    void PressButton();
 }
