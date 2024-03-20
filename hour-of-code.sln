@@ -30,6 +30,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "State", "State", "{5825C0DB
 		resources\state\03.structure.png = resources\state\03.structure.png
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Builder", "Builder", "{5A23C832-B2B2-4D28-ADC0-CAE167DD66B9}"
+	ProjectSection(SolutionItems) = preProject
+		resources\builder\01.agenda.txt = resources\builder\01.agenda.txt
+		resources\builder\02.example.png = resources\builder\02.example.png
+		resources\builder\03.structure.png = resources\builder\03.structure.png
+		resources\builder\04.structure.enhanced.png = resources\builder\04.structure.enhanced.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +60,7 @@ Global
 		{4ED9BD4E-C8E1-4ACC-A538-303265C422E3} = {3FF2BA2F-D9F1-4139-9421-C6956D768509}
 		{E446D85A-FA53-43AB-80CF-6504BA1F1BC6} = {3FF2BA2F-D9F1-4139-9421-C6956D768509}
 		{5825C0DB-9914-433A-8CD6-32F72E625B9F} = {3FF2BA2F-D9F1-4139-9421-C6956D768509}
+		{5A23C832-B2B2-4D28-ADC0-CAE167DD66B9} = {3FF2BA2F-D9F1-4139-9421-C6956D768509}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A6AE2528-5DAF-4897-A3C9-7204C36F69EC}

@@ -1,0 +1,9 @@
+1. Design Patterns Categories: Creational, Structural (Adapter), Behavioral (Strategy, State)
+
+2. The Builder design pattern (Creational)
+	- Purpose
+	- Trivial implementations
+	- UML
+	- Implementation (with a "bug")
+	- Enhanced UML
+	- Enhanced Implementation
