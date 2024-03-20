@@ -2,5 +2,5 @@
 
 public interface IWheel
 {
-    int Size { get;}
+    int Size { get; }
 }

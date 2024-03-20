@@ -2,5 +2,8 @@
 
 public interface ICarBuilder
 {
-    ICar BuildCar(string carType);
+    ICar Car { get; }
+    void BuildBody();
+    void BuildEngine();
+    void BuildWheel();
 }
