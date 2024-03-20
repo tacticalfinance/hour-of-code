@@ -8,6 +8,7 @@ public class Director : IDirector
 
     public void BuildCar()
     {
+        Builder.StartNewCar();
         Builder.BuildBody();
         Builder.BuildEngine();
         for (var i = 0; i < 4; i++) Builder.BuildWheel();

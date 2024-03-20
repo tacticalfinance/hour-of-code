@@ -10,7 +10,7 @@ public class BuilderTests
     public void TestBuildJeep()
     {
         ICarBuilder jeepCarBuilder = new JeepCarBuilder();
-        Assert.NotNull(jeepCarBuilder.Car);
+        Assert.Null(jeepCarBuilder.Car);
 
         IDirector director = new Director();
         director.Builder = jeepCarBuilder;
@@ -25,7 +25,7 @@ public class BuilderTests
     public void TestBuildHatchback()
     {
         ICarBuilder hatchbackCarBuilder = new HatchbackCarBuilder();
-        Assert.NotNull(hatchbackCarBuilder.Car);
+        Assert.Null(hatchbackCarBuilder.Car);
 
         IDirector director = new Director();
         director.Builder = hatchbackCarBuilder;
