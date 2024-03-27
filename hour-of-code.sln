@@ -38,6 +38,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Builder", "Builder", "{5A23
 		resources\builder\04.structure.enhanced.png = resources\builder\04.structure.enhanced.png
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Observer", "Observer", "{28EC4B99-5339-4996-80A3-F9D2F372508B}"
+	ProjectSection(SolutionItems) = preProject
+		resources\observer\01.agenda.txt = resources\observer\01.agenda.txt
+		resources\observer\02.example.png = resources\observer\02.example.png
+		resources\observer\03.structure.png = resources\observer\03.structure.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +68,7 @@ Global
 		{E446D85A-FA53-43AB-80CF-6504BA1F1BC6} = {3FF2BA2F-D9F1-4139-9421-C6956D768509}
 		{5825C0DB-9914-433A-8CD6-32F72E625B9F} = {3FF2BA2F-D9F1-4139-9421-C6956D768509}
 		{5A23C832-B2B2-4D28-ADC0-CAE167DD66B9} = {3FF2BA2F-D9F1-4139-9421-C6956D768509}
+		{28EC4B99-5339-4996-80A3-F9D2F372508B} = {3FF2BA2F-D9F1-4139-9421-C6956D768509}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A6AE2528-5DAF-4897-A3C9-7204C36F69EC}
