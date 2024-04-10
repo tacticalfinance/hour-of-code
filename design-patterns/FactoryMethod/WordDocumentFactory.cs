@@ -2,17 +2,12 @@ using design_patterns.FactoryMethod.contracts;
 
 namespace design_patterns.FactoryMethod;
 
-public class WordDocumentFactory : IDocumentFactory
+public class WordDocumentFactory : AbstractDocumentFactory
 {
-    public IDocument LoadDocument(string filePath)
-    {
-        var extension = Path.GetExtension(filePath).ToLower();
-        if (extension != ".doc")
-            throw new ArgumentException(
-                $"This factory can handle only .doc files; unsupported file type {extension}");
+    protected override string FileExtension => ".doc";
 
-        IDocument document = new WordDocument();
-        document.Load(filePath);
-        return document;
+    protected override IDocument CreateDocument()
+    {
+        return new WordDocument();
     }
 }
