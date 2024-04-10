@@ -2,10 +2,9 @@ using design_patterns.FactoryMethod.contracts;
 
 namespace design_patterns.FactoryMethod;
 
-public abstract class AbstractDocumentFactory : IDocumentFactory
+public abstract class AbstractDocumentFactory<T> : IDocumentFactory where T : IDocument, new()
 {
     protected abstract string FileExtension { get; }
-    protected abstract IDocument CreateDocument();
 
     public IDocument LoadDocument(string filePath)
     {
@@ -14,7 +13,7 @@ public abstract class AbstractDocumentFactory : IDocumentFactory
             throw new ArgumentException(
                 $"This factory can handle only {FileExtension} files; unsupported file type {extension}");
 
-        IDocument document = CreateDocument();
+        T document = new();
         document.Load(filePath);
         return document;
     }
