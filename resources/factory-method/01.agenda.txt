@@ -1,0 +1,9 @@
+1. Design Patterns Categories: Creational (Builder), Structural (Adapter), Behavioral (Strategy, State, Observer)
+
+2. The Factory Method design pattern (Creational)
+	- Purpose
+	- Trivial implementations
+	- UML
+	- Implementation
+	- Refactoring 1
+	- Refactoring 2

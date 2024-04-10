@@ -45,6 +45,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Observer", "Observer", "{28
 		resources\observer\03.structure.png = resources\observer\03.structure.png
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FactoryMethod", "FactoryMethod", "{E72AE77C-CAFE-48AA-A9E8-A959C94F2CD5}"
+	ProjectSection(SolutionItems) = preProject
+		resources\factory-method\01.agenda.txt = resources\factory-method\01.agenda.txt
+		resources\factory-method\02.example.png = resources\factory-method\02.example.png
+		resources\factory-method\03.structure.png = resources\factory-method\03.structure.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +76,7 @@ Global
 		{5825C0DB-9914-433A-8CD6-32F72E625B9F} = {3FF2BA2F-D9F1-4139-9421-C6956D768509}
 		{5A23C832-B2B2-4D28-ADC0-CAE167DD66B9} = {3FF2BA2F-D9F1-4139-9421-C6956D768509}
 		{28EC4B99-5339-4996-80A3-F9D2F372508B} = {3FF2BA2F-D9F1-4139-9421-C6956D768509}
+		{E72AE77C-CAFE-48AA-A9E8-A959C94F2CD5} = {3FF2BA2F-D9F1-4139-9421-C6956D768509}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A6AE2528-5DAF-4897-A3C9-7204C36F69EC}
