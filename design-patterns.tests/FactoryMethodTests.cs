@@ -7,19 +7,24 @@ namespace design_patterns.tests;
 public class FactoryMethodTests
 {
     [Fact]
-    public void TestTrivialSolution()
+    public void TestFactoryMethodSolution()
     {
-        IDocumentFactory documentFactory = new DocumentFactory();
-
+        IDocumentFactory documentFactory = new WordDocumentFactory();
         Assert.IsAssignableFrom<IDocument>(documentFactory.LoadDocument("a.doc"));
-        Assert.IsAssignableFrom<IDocument>(documentFactory.LoadDocument("b.xls"));
-        Assert.IsAssignableFrom<IDocument>(documentFactory.LoadDocument("c.pdf"));
-
         Assert.IsType<WordDocument>(documentFactory.LoadDocument("a.doc"));
-        Assert.IsType<ExcelDocument>(documentFactory.LoadDocument("b.xls"));
-        Assert.IsType<PdfDocument>(documentFactory.LoadDocument("c.pdf"));
+        ArgumentException exception = Assert.Throws<ArgumentException>(() => documentFactory.LoadDocument("a.doc2"));
+        Assert.Equal("This factory can handle only .doc files; unsupported file type .doc2", exception.Message);
 
-        ArgumentException exception = Assert.Throws<ArgumentException>(() => documentFactory.LoadDocument("a.ppt"));
-        Assert.Equal("unsupported file type .ppt", exception.Message);
+        documentFactory = new ExcelDocumentFactory();
+        Assert.IsAssignableFrom<IDocument>(documentFactory.LoadDocument("b.xls"));
+        Assert.IsType<ExcelDocument>(documentFactory.LoadDocument("b.xls"));
+        exception = Assert.Throws<ArgumentException>(() => documentFactory.LoadDocument("b.xls2"));
+        Assert.Equal("This factory can handle only .xls files; unsupported file type .xls2", exception.Message);
+
+        documentFactory = new PdfDocumentFactory();
+        Assert.IsAssignableFrom<IDocument>(documentFactory.LoadDocument("c.pdf"));
+        Assert.IsType<PdfDocument>(documentFactory.LoadDocument("c.pdf"));
+        exception = Assert.Throws<ArgumentException>(() => documentFactory.LoadDocument("c.pdf2"));
+        Assert.Equal("This factory can handle only .pdf files; unsupported file type .pdf2", exception.Message);
     }
 }
