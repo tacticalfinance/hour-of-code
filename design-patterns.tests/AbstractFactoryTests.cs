@@ -7,30 +7,28 @@ namespace design_patterns.tests;
 
 public class AbstractFactoryTests
 {
-    private string Newline => "\r\n";
-
     [Fact]
     public void TestLightTheme()
     {
-        IGuiFactory guiFactory = new GuiFactory();
-        IButton button = guiFactory.CreateButton("Light");
-        ITextBox textBox = guiFactory.CreateTextBox("Light");
-        
+        IGuiFactory factory = new LightThemeFactory();
+        IButton button = factory.CreateButton();
+        ITextBox textBox = factory.CreateTextBox();
+
         Assert.IsType<LightButton>(button);
         Assert.IsType<LightTextBox>(textBox);
 
         using var console = new ConsoleMock();
         button.Render();
         textBox.Render();
-        Assert.Equal($"Light Button{Newline}Light TextBox{Newline}", console.Output);
+        Assert.Equal($"Light Button{Environment.NewLine}Light TextBox{Environment.NewLine}", console.Output);
     }
 
     [Fact]
     public void TestDarkTheme()
     {
-        IGuiFactory guiFactory = new GuiFactory();
-        IButton button = guiFactory.CreateButton("Dark");
-        ITextBox textBox = guiFactory.CreateTextBox("Dark");
+        IGuiFactory factory = new DarkThemeFactory();
+        IButton button = factory.CreateButton();
+        ITextBox textBox = factory.CreateTextBox();
 
         Assert.IsType<DarkButton>(button);
         Assert.IsType<DarkTextBox>(textBox);
@@ -38,19 +36,6 @@ public class AbstractFactoryTests
         using var console = new ConsoleMock();
         button.Render();
         textBox.Render();
-        Assert.Equal($"Dark Button{Newline}Dark TextBox{Newline}", console.Output);
-    }
-
-    [Fact]
-    public void TestNonExistingTheme()
-    {
-        IGuiFactory guiFactory = new GuiFactory();
-
-        ArgumentException exception =
-            Assert.Throws<ArgumentException>(() => guiFactory.CreateButton("NonExistingTheme"));
-        Assert.Equal("Can't create Button for theme NonExistingTheme", exception.Message);
-
-        exception = Assert.Throws<ArgumentException>(() => guiFactory.CreateTextBox("NonExistingTheme"));
-        Assert.Equal("Can't create TextBox for theme NonExistingTheme", exception.Message);
+        Assert.Equal($"Dark Button{Environment.NewLine}Dark TextBox{Environment.NewLine}", console.Output);
     }
 }

@@ -2,6 +2,6 @@
 
 public interface IGuiFactory
 {
-    IButton CreateButton(string theme);
-    ITextBox CreateTextBox(string theme);
+    IButton CreateButton();
+    ITextBox CreateTextBox();
 }
