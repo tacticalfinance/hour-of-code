@@ -1,0 +1,10 @@
+1. Design Patterns Categories: 
+	Creational: Builder, Factory Method, Abstract Factory
+	Structural: Adapter
+	Behavioral: Strategy, State, Observer
+
+2. The Decorator design pattern (Structural)
+	- Purpose
+	- Trivial implementations
+	- UML
+	- Implementation

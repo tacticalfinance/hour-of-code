@@ -59,6 +59,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AbstratFactory", "AbstratFa
 		resources\abstract-factory\03.structure.png = resources\abstract-factory\03.structure.png
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Decorator", "Decorator", "{DC22CD34-41D5-44E2-AAFD-7A24CEB14935}"
+	ProjectSection(SolutionItems) = preProject
+		resources\decorator\01.agenda.txt = resources\decorator\01.agenda.txt
+		resources\decorator\02.example.png = resources\decorator\02.example.png
+		resources\decorator\03.structure.png = resources\decorator\03.structure.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +92,7 @@ Global
 		{28EC4B99-5339-4996-80A3-F9D2F372508B} = {3FF2BA2F-D9F1-4139-9421-C6956D768509}
 		{E72AE77C-CAFE-48AA-A9E8-A959C94F2CD5} = {3FF2BA2F-D9F1-4139-9421-C6956D768509}
 		{84002884-B475-46E4-BFCE-89A148D2ACCD} = {3FF2BA2F-D9F1-4139-9421-C6956D768509}
+		{DC22CD34-41D5-44E2-AAFD-7A24CEB14935} = {3FF2BA2F-D9F1-4139-9421-C6956D768509}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A6AE2528-5DAF-4897-A3C9-7204C36F69EC}
